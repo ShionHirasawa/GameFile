@@ -18,6 +18,52 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\beam.cpp" />
+    <ClCompile Include="code\bg.cpp" />
+    <ClCompile Include="code\boss.cpp" />
+    <ClCompile Include="code\bullet.cpp" />
+    <ClCompile Include="code\effect.cpp" />
+    <ClCompile Include="code\enemy.cpp" />
+    <ClCompile Include="code\explosion.cpp" />
+    <ClCompile Include="code\fade.cpp" />
+    <ClCompile Include="code\game.cpp" />
+    <ClCompile Include="code\hp.cpp" />
+    <ClCompile Include="code\input.cpp" />
+    <ClCompile Include="code\main.cpp" />
+    <ClCompile Include="code\particle.cpp" />
+    <ClCompile Include="code\pause.cpp" />
+    <ClCompile Include="code\player.cpp" />
+    <ClCompile Include="code\ranking.cpp" />
+    <ClCompile Include="code\result.cpp" />
+    <ClCompile Include="code\score.cpp" />
+    <ClCompile Include="code\sound.cpp" />
+    <ClCompile Include="code\title.cpp" />
+    <ClCompile Include="code\tutorial.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\beam.h" />
+    <ClInclude Include="code\bg.h" />
+    <ClInclude Include="code\boss.h" />
+    <ClInclude Include="code\bullet.h" />
+    <ClInclude Include="code\effect.h" />
+    <ClInclude Include="code\enemy.h" />
+    <ClInclude Include="code\explosion.h" />
+    <ClInclude Include="code\fade.h" />
+    <ClInclude Include="code\game.h" />
+    <ClInclude Include="code\hp.h" />
+    <ClInclude Include="code\input.h" />
+    <ClInclude Include="code\main.h" />
+    <ClInclude Include="code\particle.h" />
+    <ClInclude Include="code\pause.h" />
+    <ClInclude Include="code\player.h" />
+    <ClInclude Include="code\ranking.h" />
+    <ClInclude Include="code\result.h" />
+    <ClInclude Include="code\score.h" />
+    <ClInclude Include="code\sound.h" />
+    <ClInclude Include="code\title.h" />
+    <ClInclude Include="code\tutorial.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{79018918-12BD-4397-8A90-F293E35D247E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -151,52 +197,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="beam.cpp" />
-    <ClCompile Include="bg.cpp" />
-    <ClCompile Include="boss.cpp" />
-    <ClCompile Include="bullet.cpp" />
-    <ClCompile Include="effect.cpp" />
-    <ClCompile Include="enemy.cpp" />
-    <ClCompile Include="explosion.cpp" />
-    <ClCompile Include="fade.cpp" />
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="hp.cpp" />
-    <ClCompile Include="input.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="particle.cpp" />
-    <ClCompile Include="pause.cpp" />
-    <ClCompile Include="player.cpp" />
-    <ClCompile Include="ranking.cpp" />
-    <ClCompile Include="result.cpp" />
-    <ClCompile Include="score.cpp" />
-    <ClCompile Include="sound.cpp" />
-    <ClCompile Include="title.cpp" />
-    <ClCompile Include="tutorial.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="beam.h" />
-    <ClInclude Include="bg.h" />
-    <ClInclude Include="boss.h" />
-    <ClInclude Include="bullet.h" />
-    <ClInclude Include="effect.h" />
-    <ClInclude Include="enemy.h" />
-    <ClInclude Include="explosion.h" />
-    <ClInclude Include="fade.h" />
-    <ClInclude Include="game.h" />
-    <ClInclude Include="hp.h" />
-    <ClInclude Include="input.h" />
-    <ClInclude Include="main.h" />
-    <ClInclude Include="particle.h" />
-    <ClInclude Include="pause.h" />
-    <ClInclude Include="player.h" />
-    <ClInclude Include="ranking.h" />
-    <ClInclude Include="result.h" />
-    <ClInclude Include="score.h" />
-    <ClInclude Include="sound.h" />
-    <ClInclude Include="title.h" />
-    <ClInclude Include="tutorial.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
