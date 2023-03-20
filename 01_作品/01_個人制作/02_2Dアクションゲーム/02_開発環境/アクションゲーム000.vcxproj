@@ -18,6 +18,44 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\bg.cpp" />
+    <ClCompile Include="code\block.cpp" />
+    <ClCompile Include="code\door.cpp" />
+    <ClCompile Include="code\fade.cpp" />
+    <ClCompile Include="code\game.cpp" />
+    <ClCompile Include="code\gravity.cpp" />
+    <ClCompile Include="code\hako.cpp" />
+    <ClCompile Include="code\input.cpp" />
+    <ClCompile Include="code\loading.cpp" />
+    <ClCompile Include="code\main.cpp" />
+    <ClCompile Include="code\move.cpp" />
+    <ClCompile Include="code\particle.cpp" />
+    <ClCompile Include="code\pause.cpp" />
+    <ClCompile Include="code\player.cpp" />
+    <ClCompile Include="code\sound.cpp" />
+    <ClCompile Include="code\title.cpp" />
+    <ClCompile Include="code\tutorial.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\bg.h" />
+    <ClInclude Include="code\block.h" />
+    <ClInclude Include="code\door.h" />
+    <ClInclude Include="code\fade.h" />
+    <ClInclude Include="code\game.h" />
+    <ClInclude Include="code\gravity.h" />
+    <ClInclude Include="code\hako.h" />
+    <ClInclude Include="code\input.h" />
+    <ClInclude Include="code\loading.h" />
+    <ClInclude Include="code\main.h" />
+    <ClInclude Include="code\move.h" />
+    <ClInclude Include="code\particle.h" />
+    <ClInclude Include="code\pause.h" />
+    <ClInclude Include="code\player.h" />
+    <ClInclude Include="code\sound.h" />
+    <ClInclude Include="code\title.h" />
+    <ClInclude Include="code\tutorial.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{CF7FA247-CACF-4F76-9A2B-9A843135D8C4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -151,44 +189,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="bg.cpp" />
-    <ClCompile Include="block.cpp" />
-    <ClCompile Include="door.cpp" />
-    <ClCompile Include="fade.cpp" />
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="gravity.cpp" />
-    <ClCompile Include="hako.cpp" />
-    <ClCompile Include="input.cpp" />
-    <ClCompile Include="loading.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="move.cpp" />
-    <ClCompile Include="particle.cpp" />
-    <ClCompile Include="pause.cpp" />
-    <ClCompile Include="player.cpp" />
-    <ClCompile Include="sound.cpp" />
-    <ClCompile Include="title.cpp" />
-    <ClCompile Include="tutorial.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="bg.h" />
-    <ClInclude Include="block.h" />
-    <ClInclude Include="door.h" />
-    <ClInclude Include="fade.h" />
-    <ClInclude Include="game.h" />
-    <ClInclude Include="gravity.h" />
-    <ClInclude Include="hako.h" />
-    <ClInclude Include="input.h" />
-    <ClInclude Include="loading.h" />
-    <ClInclude Include="main.h" />
-    <ClInclude Include="move.h" />
-    <ClInclude Include="particle.h" />
-    <ClInclude Include="pause.h" />
-    <ClInclude Include="player.h" />
-    <ClInclude Include="sound.h" />
-    <ClInclude Include="title.h" />
-    <ClInclude Include="tutorial.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
