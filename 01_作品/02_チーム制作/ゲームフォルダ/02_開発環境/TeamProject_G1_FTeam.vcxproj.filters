@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\GAME">
+      <UniqueIdentifier>{c90dfaf0-d6b6-4a21-bfbb-2b2f74f612da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GAME\PVP">
+      <UniqueIdentifier>{81f90b6f-d26d-4b80-8fff-9b4c2da4202a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GAME\HDR">
+      <UniqueIdentifier>{55f399b5-3421-49bb-be47-333e9a0aecdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\AI">
+      <UniqueIdentifier>{54a5af67-ce88-464d-9881-42f36aeafaa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GAME\EFFECT">
+      <UniqueIdentifier>{4be965e7-4fec-45df-af41-9ff621d3b798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GAME\CAMERA">
+      <UniqueIdentifier>{43102f9a-5f0d-4e60-af76-9a1c3ed2a4eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MAIN">
+      <UniqueIdentifier>{0a676a80-b6aa-41b3-a691-268feab5c637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MAIN\INPUT">
+      <UniqueIdentifier>{d45bd2be-ee0e-4432-b659-7bcaf35885ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GAME\STAGE">
+      <UniqueIdentifier>{885ec731-be13-4cee-9e7a-b9f5a75b1d5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\RESULT">
+      <UniqueIdentifier>{c7de693f-6a65-4b65-803d-7bb05a2b94d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\TUTORIAL">
+      <UniqueIdentifier>{cfedfea3-4db1-4b3a-927c-16938656f268}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\SELECTMODE">
+      <UniqueIdentifier>{a5ab133f-d7cc-4387-bcdf-4958bd3ebf07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\TITLE">
+      <UniqueIdentifier>{770143c9-5d51-4c34-a769-8e23e3ec7315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\SOUND">
+      <UniqueIdentifier>{73f98a4e-e183-4634-8466-5d4d726058fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="WildBoar_exeIcon.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\block.h">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClInclude>
+    <ClInclude Include="code\bonus.h">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClInclude>
+    <ClInclude Include="code\collision.h">
+      <Filter>ソース ファイル\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="code\ai.h">
+      <Filter>ソース ファイル\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="code\comai.h">
+      <Filter>ソース ファイル\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="code\attack_effect.h">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\camera_frame.h">
+      <Filter>ソース ファイル\GAME\CAMERA</Filter>
+    </ClInclude>
+    <ClInclude Include="code\camera.h">
+      <Filter>ソース ファイル\GAME\CAMERA</Filter>
+    </ClInclude>
+    <ClInclude Include="code\charge_cylinder.h">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\charge_effect.h">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\conversioninput.h">
+      <Filter>ソース ファイル\MAIN\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\color.h">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="code\curtain.h">
+      <Filter>ソース ファイル\GAME\CAMERA</Filter>
+    </ClInclude>
+    <ClInclude Include="code\debugproc.h">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="code\eff_shock-wave_00.h">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\effect.h">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\fence.h">
+      <Filter>ソース ファイル\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="code\fade.h">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="code\file.h">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="code\GaugeFrame.h">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClInclude>
+    <ClInclude Include="code\gauge.h">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClInclude>
+    <ClInclude Include="code\HDR_camera.h">
+      <Filter>ソース ファイル\GAME\CAMERA</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr_player.h">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClInclude>
+    <ClInclude Include="code\HDRgame.h">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClInclude>
+    <ClInclude Include="code\HipDropRankUI.h">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClInclude>
+    <ClInclude Include="code\input.h">
+      <Filter>ソース ファイル\MAIN\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\item.h">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClInclude>
+    <ClInclude Include="code\main.h">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="code\light.h">
+      <Filter>ソース ファイル\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="code\meshcylinder.h">
+      <Filter>ソース ファイル\GAME\STAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="code\meshdome.h">
+      <Filter>ソース ファイル\GAME\STAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="code\meshfault.h">
+      <Filter>ソース ファイル\GAME\STAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="code\meshfield.h">
+      <Filter>ソース ファイル\GAME\STAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="code\object.h">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClInclude>
+    <ClInclude Include="code\particle.h">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\preview.h">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClInclude>
+    <ClInclude Include="code\model.h">
+      <Filter>ソース ファイル\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pvp_game.h">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClInclude>
+    <ClInclude Include="code\PvP_player.h">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClInclude>
+    <ClInclude Include="code\rank.h">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClInclude>
+    <ClInclude Include="code\result.h">
+      <Filter>ソース ファイル\RESULT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\resultCamera.h">
+      <Filter>ソース ファイル\RESULT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\resultCylinder.h">
+      <Filter>ソース ファイル\RESULT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\resultPlayer.h">
+      <Filter>ソース ファイル\RESULT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\score.h">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClInclude>
+    <ClInclude Include="code\select_game.h">
+      <Filter>ソース ファイル\SELECTMODE</Filter>
+    </ClInclude>
+    <ClInclude Include="code\SelPlayer.h">
+      <Filter>ソース ファイル\SELECTMODE</Filter>
+    </ClInclude>
+    <ClInclude Include="code\SelPlayer_bg.h">
+      <Filter>ソース ファイル\SELECTMODE</Filter>
+    </ClInclude>
+    <ClInclude Include="code\SelPlayer_camera.h">
+      <Filter>ソース ファイル\SELECTMODE</Filter>
+    </ClInclude>
+    <ClInclude Include="code\title.h">
+      <Filter>ソース ファイル\TITLE</Filter>
+    </ClInclude>
+    <ClInclude Include="code\titleCamera.h">
+      <Filter>ソース ファイル\TITLE</Filter>
+    </ClInclude>
+    <ClInclude Include="code\tutorial.h">
+      <Filter>ソース ファイル\TUTORIAL</Filter>
+    </ClInclude>
+    <ClInclude Include="code\TypeFrame.h">
+      <Filter>ソース ファイル\SELECTMODE</Filter>
+    </ClInclude>
+    <ClInclude Include="code\sound.h">
+      <Filter>ソース ファイル\SOUND</Filter>
+    </ClInclude>
+    <ClInclude Include="code\tremor_effect.h">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\VictoryStand.h">
+      <Filter>ソース ファイル\RESULT</Filter>
+    </ClInclude>
+    <ClInclude Include="code\timer.h">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pause.h">
+      <Filter>ソース ファイル\GAME</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\block.cpp">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClCompile>
+    <ClCompile Include="code\bonus.cpp">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClCompile>
+    <ClCompile Include="code\collision.cpp">
+      <Filter>ソース ファイル\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="code\comai.cpp">
+      <Filter>ソース ファイル\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="code\attack_effect.cpp">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\camera_frame.cpp">
+      <Filter>ソース ファイル\GAME\CAMERA</Filter>
+    </ClCompile>
+    <ClCompile Include="code\camera.cpp">
+      <Filter>ソース ファイル\GAME\CAMERA</Filter>
+    </ClCompile>
+    <ClCompile Include="code\charge_cylinder.cpp">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\charge_effect.cpp">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\conversioninput.cpp">
+      <Filter>ソース ファイル\MAIN\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\color.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="code\curtain.cpp">
+      <Filter>ソース ファイル\GAME\CAMERA</Filter>
+    </ClCompile>
+    <ClCompile Include="code\debucproc.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="code\eff_shock-wave_00.cpp">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\effect.cpp">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\fence.cpp">
+      <Filter>ソース ファイル\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="code\fade.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="code\file.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="code\gauge.cpp">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClCompile>
+    <ClCompile Include="code\GaugeFrame.cpp">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClCompile>
+    <ClCompile Include="code\HDR_camera.cpp">
+      <Filter>ソース ファイル\GAME\CAMERA</Filter>
+    </ClCompile>
+    <ClCompile Include="code\hdr_player.cpp">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClCompile>
+    <ClCompile Include="code\HDRgame.cpp">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClCompile>
+    <ClCompile Include="code\HipDropRankUI.cpp">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClCompile>
+    <ClCompile Include="code\input.cpp">
+      <Filter>ソース ファイル\MAIN\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\item.cpp">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClCompile>
+    <ClCompile Include="code\main.cpp">
+      <Filter>ソース ファイル\MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="code\light.cpp">
+      <Filter>ソース ファイル\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="code\meshcylinder.cpp">
+      <Filter>ソース ファイル\GAME\STAGE</Filter>
+    </ClCompile>
+    <ClCompile Include="code\meshdome.cpp">
+      <Filter>ソース ファイル\GAME\STAGE</Filter>
+    </ClCompile>
+    <ClCompile Include="code\meshfault.cpp">
+      <Filter>ソース ファイル\GAME\STAGE</Filter>
+    </ClCompile>
+    <ClCompile Include="code\meshfield.cpp">
+      <Filter>ソース ファイル\GAME\STAGE</Filter>
+    </ClCompile>
+    <ClCompile Include="code\object.cpp">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClCompile>
+    <ClCompile Include="code\particle.cpp">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\preview.cpp">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClCompile>
+    <ClCompile Include="code\model.cpp">
+      <Filter>ソース ファイル\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pvp_game.cpp">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClCompile>
+    <ClCompile Include="code\PvP_player.cpp">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClCompile>
+    <ClCompile Include="code\rank.cpp">
+      <Filter>ソース ファイル\GAME\HDR</Filter>
+    </ClCompile>
+    <ClCompile Include="code\result.cpp">
+      <Filter>ソース ファイル\RESULT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\resultCamera.cpp">
+      <Filter>ソース ファイル\RESULT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\resultCylinder.cpp">
+      <Filter>ソース ファイル\RESULT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\resultPlayer.cpp">
+      <Filter>ソース ファイル\RESULT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\score.cpp">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClCompile>
+    <ClCompile Include="code\select_game.cpp">
+      <Filter>ソース ファイル\SELECTMODE</Filter>
+    </ClCompile>
+    <ClCompile Include="code\SelPlayer.cpp">
+      <Filter>ソース ファイル\SELECTMODE</Filter>
+    </ClCompile>
+    <ClCompile Include="code\SelPlayer_bg.cpp">
+      <Filter>ソース ファイル\SELECTMODE</Filter>
+    </ClCompile>
+    <ClCompile Include="code\SelPlayer_camera.cpp">
+      <Filter>ソース ファイル\SELECTMODE</Filter>
+    </ClCompile>
+    <ClCompile Include="code\title.cpp">
+      <Filter>ソース ファイル\TITLE</Filter>
+    </ClCompile>
+    <ClCompile Include="code\titleCamera.cpp">
+      <Filter>ソース ファイル\TITLE</Filter>
+    </ClCompile>
+    <ClCompile Include="code\tutorial.cpp">
+      <Filter>ソース ファイル\TUTORIAL</Filter>
+    </ClCompile>
+    <ClCompile Include="code\TypeFrame.cpp">
+      <Filter>ソース ファイル\SELECTMODE</Filter>
+    </ClCompile>
+    <ClCompile Include="code\sound.cpp">
+      <Filter>ソース ファイル\SOUND</Filter>
+    </ClCompile>
+    <ClCompile Include="code\tremor_effect.cpp">
+      <Filter>ソース ファイル\GAME\EFFECT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\VictoryStand.cpp">
+      <Filter>ソース ファイル\RESULT</Filter>
+    </ClCompile>
+    <ClCompile Include="code\timer.cpp">
+      <Filter>ソース ファイル\GAME\PVP</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pause.cpp">
+      <Filter>ソース ファイル\GAME</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
