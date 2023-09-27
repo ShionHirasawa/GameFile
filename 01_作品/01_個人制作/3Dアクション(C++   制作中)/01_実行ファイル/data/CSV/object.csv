@@ -3,14 +3,14 @@ OBJECT_FILENAME,data/OBJECT/planter.x,,#プランター,,無個性,
 OBJECT_FILENAME,data/OBJECT/cardboard.x,,# 段ボール,,個性「俊敏」,
 OBJECT_FILENAME,data/OBJECT/Woodbox.x,,# 木箱,,個性「強靭」,
 OBJECT_FILENAME,data/OBJECT/desk.x,,# 机,,個性「収納」,
-OBJECT_FILENAME,data/OBJECT/jewel.x,,# 宝石,,個性「束縛」,
+OBJECT_FILENAME,data/OBJECT/jewel.x,,# 宝石,,,
 ,,,,,,
-,#INDEX,個性,,,,
-XMODELTYPE,0,0,#プランター,無個性,,
-XMODELTYPE,1,3,# 段ボール,個性「収納」,,
-XMODELTYPE,2,1,# 木箱,個性「俊敏」,,
-XMODELTYPE,3,2,# 机,個性「強靭」,,
-XMODELTYPE,4,0,# 宝石,無個性,,
+,#INDEX,個性,体力,,,
+XMODELTYPE,0,0,100,,#プランター,無個性
+XMODELTYPE,1,3,40,,# 段ボール,個性「収納」
+XMODELTYPE,2,1,10,,# 木箱,個性「俊敏」
+XMODELTYPE,3,2,300,,# 机,個性「強靭」
+XMODELTYPE,4,0,0,,# 宝石,無個性
 ,,,,,,
 OBJECTSET,#1個目,,,,,
 INDEX,0,#プランター,,,,
