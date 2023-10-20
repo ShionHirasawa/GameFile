@@ -16,7 +16,7 @@ Author:平澤詩苑
 //プレイヤーの情報マクロ
 #define PLAYER_POS				D3DXVECTOR3(300.0f, 0.0f, F_ZERO)
 #define PLAYER_MOVE				D3DXVECTOR3(F_ZERO, F_ZERO, F_ZERO)
-#define PLAYER_TEX				"data/TEXTURE/プレイヤーデータ.png"
+#define PLAYER_TEX				"data/TEXTURE/PlayerAnimation.png"
 #define MOVE_MAX_TEX			(10)		//歩きモーションのテクスチャ最大数
 #define PLAYER_WIDTH			(35.0f)		//プレイヤーの幅(中心から左右に伸びるので端から端の半分)
 #define PLAYER_HEIGHT			(75.0f)		//プレイヤーの高さ
@@ -93,19 +93,6 @@ void InitPlayer(void)
 
 	//頂点座標の設定
 	{
-		/*pVtx[ZERO].pos.x = g_player.pos.x + sinf(g_player.rot.z + (-D3DX_PI + g_player.fAngle)) * g_player.fLength;
-		pVtx[ZERO].pos.y = g_player.pos.y + cosf(g_player.rot.z + (-D3DX_PI + g_player.fAngle)) * g_player.fLength;
-		pVtx[ZERO].pos.z = ORIGIN_POS;
-		pVtx[ONE].pos.x = g_player.pos.x + sinf(g_player.rot.z + (D3DX_PI - g_player.fAngle)) * g_player.fLength;
-		pVtx[ONE].pos.y = g_player.pos.y + cosf(g_player.rot.z + (D3DX_PI - g_player.fAngle)) * g_player.fLength;
-		pVtx[ONE].pos.z = ORIGIN_POS;
-		pVtx[SEC].pos.x = g_player.pos.x + sinf(g_player.rot.z + (ORIGIN_POS - g_player.fAngle)) * g_player.fLength;
-		pVtx[SEC].pos.y = g_player.pos.y + cosf(g_player.rot.z + (ORIGIN_POS - g_player.fAngle)) * g_player.fLength;
-		pVtx[SEC].pos.z = ORIGIN_POS;
-		pVtx[SAN].pos.x = g_player.pos.x + sinf(g_player.rot.z + (ORIGIN_POS + g_player.fAngle)) * g_player.fLength;
-		pVtx[SAN].pos.y = g_player.pos.y + cosf(g_player.rot.z + (ORIGIN_POS + g_player.fAngle)) * g_player.fLength;
-		pVtx[SAN].pos.z = ORIGIN_POS;*/
-
 		pVtx[ZERO].pos = D3DXVECTOR3(g_player.pos.x - g_player.fWidth, g_player.pos.y - g_player.fHeight, ORIGIN_POS);
 		pVtx[ONE].pos = D3DXVECTOR3(g_player.pos.x + g_player.fWidth,  g_player.pos.y - g_player.fHeight, ORIGIN_POS);
 		pVtx[SEC].pos = D3DXVECTOR3(g_player.pos.x - g_player.fWidth,  g_player.pos.y, ORIGIN_POS);

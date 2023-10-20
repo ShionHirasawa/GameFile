@@ -18,5 +18,4 @@ void UpdateTexKoma(void);
 void Koma000Update(void);
 void Koma001Update(void); 
 void Koma002Update(void); 
-void Koma003Update(void);
 #endif

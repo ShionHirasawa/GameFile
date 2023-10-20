@@ -14,8 +14,8 @@
 //*****************************************************************************
 typedef enum
 {
-	SOUND_LABEL_MORUDAW = ZERO,	// BGM0
-	SOUND_LABEL_TETRIS,			// BGM1
+	SOUND_LABEL_GAME = ZERO,	// ゲームBGM
+	SOUND_LABEL_LOADING,		// ローディングBGM
 	SOUND_LABEL_HAKO001,		// ハコ1つ目
 	SOUND_LABEL_HAKO002,		// ハコ2つ目
 	SOUND_LABEL_HAKO003,		// ハコ3つ目

@@ -27,7 +27,7 @@ void InitTitle(void)
 {
 	LPDIRECT3DDEVICE9 pDevice = GetDevice();			//デバイスへのポインタ + 取得
 
-	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/タイトル画面.png", &g_pTextureTitle);
+	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/Title.png", &g_pTextureTitle);
 		
 	g_TitlePos = TITLE_POS;	//タイトルの位置初期化
 	g_aTexV = ZERO;			//テクスチャのα値初期化

@@ -384,7 +384,7 @@ void Draw(void)
 //FPSの表示
 void DrawFPS(void)
 {
-#if 0
+#if _DEBUG
 	RECT rect = { ZERO, ZERO, SCREEN_WIDTH, SCREEN_HEIGHT };
 	char aStr[MAX_MOJI];
 
@@ -414,11 +414,11 @@ void SetMode(MODE mode)
 	{
 	case MODE_LOADING:		//ローディング画面終了
 		UninitLoading();
-		StopSound(SOUND_LABEL_TETRIS);	//テトリス音楽終了
+		StopSound(SOUND_LABEL_LOADING);	//ローディングBGM終了
 		break;
 	case MODE_GAME:			//ゲーム画面終了
 		UninitGame();
-		StopSound(SOUND_LABEL_MORUDAW);	//モルダウ終了
+		StopSound(SOUND_LABEL_GAME);	//ゲームBGM終了
 		break;
 	}
 
@@ -427,11 +427,11 @@ void SetMode(MODE mode)
 	{
 	case MODE_LOADING:		//ローディング画面初期化
 		InitLoading();
-		PlaySound(SOUND_LABEL_TETRIS);	//テトリス音楽開始
+		PlaySound(SOUND_LABEL_LOADING);	//ローディングBGM開始
 		break;
 	case MODE_GAME:			//ゲーム画面初期化
 		InitGame();
-		PlaySound(SOUND_LABEL_MORUDAW);	//モルダウ開始
+		PlaySound(SOUND_LABEL_GAME);	//ゲームBGM開始
 		break;
 	}
 

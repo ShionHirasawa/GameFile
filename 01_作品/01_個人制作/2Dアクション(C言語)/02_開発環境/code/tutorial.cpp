@@ -85,9 +85,9 @@ void InitTutorial(void)
 	g_AnimHako = ANIM_HAKO_THROW;
 
 	//テクスチャの読み込み
-	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/ジャンプチュートリアル.png", &g_pTextureTutorial[TUTORIAL_JUMP]);
-	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/ハコチュートリアル.png", &g_pTextureTutorial[TUTORIAL_HAKO]);
-	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/操作説明.png", &g_pTextureTutorial[TUTORIAL_HOWTO]);
+	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/JumpTutorial.png", &g_pTextureTutorial[TUTORIAL_JUMP]);
+	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/HAKO_Tutorial.png", &g_pTextureTutorial[TUTORIAL_HAKO]);
+	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/HowToPlay.png", &g_pTextureTutorial[TUTORIAL_HOWTO]);
 
 	//頂点バッファの生成
 	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * NUM_VERTEX * NUM_TUTORIAL, D3DUSAGE_WRITEONLY, FVF_VERTEX_2D, D3DPOOL_MANAGED, &g_pVtxBuffTutorial, NULL);

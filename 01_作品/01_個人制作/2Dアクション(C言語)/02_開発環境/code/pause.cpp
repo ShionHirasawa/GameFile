@@ -25,7 +25,7 @@ void InitPause(void)
 	LPDIRECT3DDEVICE9 pDevice = GetDevice();		//デバイスの取得
 
 	//テクスチャの読み込み
-	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/ポーズ画面背景.png", &g_pTexturePause[PAUSE_MENU_BG]);	//背景画像
+	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/PauseBG.png", &g_pTexturePause[PAUSE_MENU_BG]);	//背景画像
 	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/continue.png", &g_pTexturePause[PAUSE_MENU_CONTINUE]);	//コンティニュー画像
 	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/retry.png", &g_pTexturePause[PAUSE_MENU_RETRY]);		//リトライ画像
 	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/quit.png", &g_pTexturePause[PAUSE_MENU_LOAD]);			//ロード画像

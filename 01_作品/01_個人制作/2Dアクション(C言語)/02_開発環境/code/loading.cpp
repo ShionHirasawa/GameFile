@@ -46,17 +46,17 @@ Author:平澤詩苑
 #define KOMA_TEXU				(1.0f)								//テクスチャのU座標の幅
 
 //コマ１つ目のマクロ
-#define LOAD_KOMA000_TEXTURE	"data/TEXTURE/コマ000.png"			//コマ1つ目のテクスチャパス
+#define LOAD_KOMA000_TEXTURE	"data/TEXTURE/Scene000.png"			//コマ1つ目のテクスチャパス
 #define LOAD_KOMA000_POS		(D3DXVECTOR3(250.0f, 200.0f, 0.0f))	//コマ1つ目の表示場所
 #define LOAD_KOMA000_BIRTH		(20)								//画像が現れるタイミング
 
 //コマ2つ目のマクロ
-#define LOAD_KOMA001_TEXTURE	"data/TEXTURE/コマ001.png"			//コマ2つ目のテクスチャパス
+#define LOAD_KOMA001_TEXTURE	"data/TEXTURE/Scene001.png"			//コマ2つ目のテクスチャパス
 #define LOAD_KOMA001_POS		(D3DXVECTOR3(550.0f, 200.0f, 0.0f))	//コマ2つ目の表示場所
 #define LOAD_KOMA001_BIRTH		(80)								//画像が現れるタイミング
 
 //コマ3つ目のマクロ
-#define LOAD_KOMA002_TEXTURE	"data/TEXTURE/コマ002.png"			//コマ2つ目のテクスチャパス
+#define LOAD_KOMA002_TEXTURE	"data/TEXTURE/Scene002.png"			//コマ2つ目のテクスチャパス
 #define LOAD_KOMA002_POS		(D3DXVECTOR3(850.0f, 200.0f, 0.0f))	//コマ2つ目の表示場所
 #define LOAD_KOMA002_BIRTH		(140)								//画像が現れるタイミング
 
@@ -427,9 +427,6 @@ void UpdateTexKoma(void)
 
 	//コマ3つ目の更新処理
 	Koma002Update();
-
-	//コマ4つ目の更新処理
-	//Koma003Update();
 }
 
 //コマ1つ目の更新処理
@@ -476,22 +473,6 @@ void Koma002Update(void)
 		if (g_Loading[LOAD_TEX_KOMA002].aCol > COLOR_MAX)
 		{
 			g_Loading[LOAD_TEX_KOMA002].aCol = COLOR_MAX;
-		}
-	}
-}
-
-//コマ4つ目の更新処理
-void Koma003Update(void)
-{
-	if (g_nLoadingCounter >= LOAD_KOMA000_BIRTH)
-	{
-		g_Loading[LOAD_TEX_KOMA000].bUse = true;
-
-		g_Loading[LOAD_TEX_KOMA000].aCol += BIRTH_KOMA_COUNT;
-
-		if (g_Loading[LOAD_TEX_KOMA000].aCol > COLOR_MAX)
-		{
-			g_Loading[LOAD_TEX_KOMA000].aCol = COLOR_MAX;
 		}
 	}
 }

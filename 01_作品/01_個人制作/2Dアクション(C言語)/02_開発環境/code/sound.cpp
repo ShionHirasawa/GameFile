@@ -34,15 +34,15 @@ DWORD g_aSizeAudio[SOUND_LABEL_MAX] = {};					// オーディオデータサイズ
 // サウンドの情報
 SOUNDINFO g_aSoundInfo[SOUND_LABEL_MAX] =
 {
-	{ "data/SOUND/モルダウ.wav", -1, 0.2f },	// BGM0
-	{ "data/SOUND/テトリス.wav", -1, 0.3f },	// BGM1
-	{ "data/SOUND/ピアノド.wav",  0, 0.5f },	// ド
-	{ "data/SOUND/ピアノレ.wav",  0, 0.5f },	// レ
-	{ "data/SOUND/ピアノミ.wav",  0, 0.5f },	// ミ
-	{ "data/SOUND/ピアノファ.wav",0, 0.5f },	// ファ
-	{ "data/SOUND/ピアノソ.wav",  0, 0.5f },	// ソ
-	{ "data/SOUND/投げる.wav",	  0, 0.5f },	// 投げる音
-	{ "data/SOUND/置く.wav",	  0, 0.8f },	// 置く音
+	{ "data/SOUND/GameBGM.wav",		-1,	0.2f },	// ゲームBGM
+	{ "data/SOUND/LoadingBGM.wav",	-1,	0.3f },	// ローディングBGM
+	{ "data/SOUND/HAKO000.wav",		0,	0.5f },	// ハコ1つ目
+	{ "data/SOUND/HAKO001.wav",		0,	0.5f },	// ハコ2つ目
+	{ "data/SOUND/HAKO002.wav",		0,	0.5f },	// ハコ3つ目
+	{ "data/SOUND/HAKO003.wav",		0,	0.5f },	// ハコ4つ目
+	{ "data/SOUND/HAKO004.wav",		0,	0.5f },	// ハコ5つ目
+	{ "data/SOUND/Throw.wav",		0,	0.5f },	// 投げる
+	{ "data/SOUND/Put.wav",			0,	0.8f },	// 置く
 };
 
 //=============================================================================

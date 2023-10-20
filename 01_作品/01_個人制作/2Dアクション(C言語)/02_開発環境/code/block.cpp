@@ -40,8 +40,8 @@ void InitBlock(void)
 	SetBlock();
 
 	//テクスチャの読み込み
-	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/壁.png", &g_pTextureBlock[ZERO]);
-	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/とげ.png", &g_pTextureBlock[ONE]);
+	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/Wall.png", &g_pTextureBlock[ZERO]);
+	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/Spike.png", &g_pTextureBlock[ONE]);
 	D3DXCreateTextureFromFile(pDevice, "data/TEXTURE/block000.jpg", &g_pTextureBlock[SEC]);
 
 	//頂点バッファの生成
@@ -189,16 +189,16 @@ void SetBlock(void)
 			fscanf(pFile, "%s", &aData[ZERO]);	//一行読み込み
 			
 			//配置場所の初期化
-			g_Block[nCntBlock].pos.x = atof(strtok(&aData[ZERO], ","));	//位置初期化
-			g_Block[nCntBlock].pos.y = atof(strtok(NULL, ","));			//位置初期化
+			g_Block[nCntBlock].pos.x = (float)atof(strtok(&aData[ZERO], ","));	//位置初期化
+			g_Block[nCntBlock].pos.y = (float)atof(strtok(NULL, ","));			//位置初期化
 
 			g_Block[nCntBlock].nType = atoi(strtok(NULL, ","));			//種類の初期化
-			g_Block[nCntBlock].fWidth = atof(strtok(NULL, ","));		//幅の初期化
-			g_Block[nCntBlock].fHeight = atof(strtok(NULL, ","));		//高さの初期化
+			g_Block[nCntBlock].fWidth = (float)atof(strtok(NULL, ","));		//幅の初期化
+			g_Block[nCntBlock].fHeight = (float)atof(strtok(NULL, ","));		//高さの初期化
 
 			//テクスチャの座標
-			g_Block[nCntBlock].Tex.x = atof(strtok(NULL, ","));			//一つのブロックに対するテクスチャの描画数を読み込み
-			g_Block[nCntBlock].Tex.y = atof(strtok(NULL, ","));			//一つのブロックに対するテクスチャの描画数を読み込み
+			g_Block[nCntBlock].Tex.x = (float)atof(strtok(NULL, ","));			//一つのブロックに対するテクスチャの描画数を読み込み
+			g_Block[nCntBlock].Tex.y = (float)atof(strtok(NULL, ","));			//一つのブロックに対するテクスチャの描画数を読み込み
 
 			g_Block[nCntBlock].posOld = g_Block[nCntBlock].pos;			//前回の位置を現在の位置に初期化
 			g_Block[nCntBlock].bUse = true;								//使用している状態に
